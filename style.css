@@ -164,7 +164,13 @@ html, body {
     
 }
 
+#left-column {
+    display: flex;
+    flex-direction: column;
+}
+
 #card-grid {
+  flex: 1;
   display: grid;
   grid-column: 1;
   grid-row: 1 / 3;
