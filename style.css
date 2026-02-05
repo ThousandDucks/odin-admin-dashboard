@@ -149,12 +149,97 @@ html, body {
   color: white;
   margin-left: 20px;
 }
-/* */ 
+
+/* Main */ 
 
 #main {
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    
+}
+
+#card-grid {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  gap: 1rem;           
 }
 
 
+#announcements {
+  grid-column: 2;
+  grid-row: 1;
+  padding-bottom: 50px;
+}
+
+#trending {
+  grid-column: 2;
+  grid-row: 2;
+}
 
 
+#cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-right: 20px;
+}
+
+#cards div {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#cards svg {
+  width: 25px;
+  height: 25px;
+}
+
+#trending #profile {
+  width: 40px;
+  height: 40px;
+}
+
+#updates, #trending-projects {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card {
+  position: relative;   
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.icons {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.section-header {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.box {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(122, 122, 122, 0.3);
+}
+
+.box-text {
+  color: #7a7a7a;
+}
