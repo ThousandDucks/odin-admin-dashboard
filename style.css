@@ -4,6 +4,13 @@ html, body {
   font-family: Roboto;
 }
 
+#main-container {
+    display: grid;
+    grid-template-columns: 1.3fr 5fr;
+    grid-template-rows: 1.5fr 5fr;
+    height: 100vh;
+}
+
 /* Sidebar */
 
 #sidebar {
@@ -71,27 +78,15 @@ html, body {
   margin: 0;    
 }
 
-/* */
-
-#main {
-    background-color: #e2e8f0;
-}
-
-#main-container {
-    display: grid;
-    grid-template-columns: 1.3fr 5fr;
-    grid-template-rows: 1.5fr 5fr;
-    height: 100vh;
-}
-
-
-
+/* Header */
 
 #header {
   display: grid;
   grid-template-rows: auto auto;
   gap: 16px;
-  padding: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
 }
 
 #top {
@@ -101,9 +96,65 @@ html, body {
   gap: 16px;
 }
 
+#top svg {
+  width: 24px;   
+  height: 24px;
+  fill: black;   
+  flex-shrink: 0; 
+}
+
+#top input {
+  border-radius: 30px;
+  background-color: #e2e8f0;
+  border: 0;
+  width: 700px;      
+  height: 32px;
+  padding-left: 20px;
+}
+
+#top svg#profile {
+    width: 40px;
+    height: 40px;
+    padding-left: 15px;
+}
+
 #bottom {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 16px;
 }
+
+#profile-2 {
+  width: 60px;   
+  height: 60px;
+  fill: black;   
+  flex-shrink: 0; 
+}
+
+.user-text {
+  font-weight: bold;
+}
+
+#username {
+  font-size: 25px;
+}
+
+#bttn button{
+  background-color: #1992d4;
+  border-radius: 20px;
+  width: 90px;
+  height: 35px;
+  border: 0;
+  color: white;
+  margin-left: 20px;
+}
+/* */ 
+
+#main {
+    background-color: #e2e8f0;
+}
+
+
+
+
